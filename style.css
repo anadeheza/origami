@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Schoolbell", cursive;
+    background: linear-gradient(-45deg, #70260f, #c0623a, #dda371, #fcf0ad);
+    background-size: 400% 400%;
+    animation: splash-animation 10s ease infinite;
+    align-items: center;
+}
+
+@keyframes splash-animation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#Hero {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#Hero h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+#Hero p {
+    font-size: 20px;
+}
+
+#steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    color: black
+}
+
+.step {
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    border: 4px dashed #b45c25;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(92, 50, 4, 0.5);
+}
+
+.step p {
+    font-size: 20px;
+}
+
+.step img {
+  height: 250px;
+  object-fit: cover; 
+}
+
+.step-content {
+  padding: 15px;
+}
+
+#info {
+    margin-top: 50px;
+    text-align: center;
+    width: 70%;
+}
+
+#info h4 {
+    margin-bottom: 20px;
+}
+
+#info p {
+    font-size: 25px;
+}
